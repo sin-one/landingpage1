@@ -15,25 +15,44 @@ body {
     
 }
 
-a {
+
+
+.hero-text > a {
     text-decoration: none;
     color:black;
+    
 }
 
-ul {
+.hero-text > a:link, a:visited, a:hover, a:active {
+    color:white;
+    text-decoration: none;
+}
+
+.header-links > ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap:16px;
+    gap:24px;
     align-items: center;
     padding-right: 50px;
 }
+
+.header-links > ul > li > a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.header-links > ul > li > a:hover {
+    color: rgb(52, 156, 83);
+}
+
 
 .hero-main{
     display: flex;
     padding: 30px;
     background-color: #1f2937;
     color:#f9faf8;
+    gap:40px;
     
     
 }
@@ -70,6 +89,7 @@ ul {
     background-color: #25becb;
     padding: 8px;
     border: 2px solid white;
+    border-radius:15px;
   }
 
 
@@ -84,9 +104,15 @@ h2 {
     text-align: center;
 }
 
+
+
+
 .info > img {
     width: 150px;
     margin-bottom:20px;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px 50px;
 }
   
 
@@ -94,12 +120,86 @@ h2 {
 .info-images {
     display: flex;
     justify-content: center;
-    gap: 52px;
+    gap: 130px;
     flex-grow: 1;
-    padding: 10px;
+    padding: 20px 200px 20px 200px;
     
 }
 
-.image-text {
-    border: 2px solid #1f2937;
+
+
+
+
+
+
+
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding-top: 30px;
+    padding-right:100px;
+    padding-left:100px;
+    padding-bottom: 10px;
+    
+}
+
+.quote-text {
+    padding: 40px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quoter {
+    align-self: end;
+    font-weight:bold;
+    padding-right: 70px;
+}
+
+.action {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 40px;
+}
+
+.actionbox {
+    display:flex;
+    gap: 200px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    border-radius: 20px;
+    padding: 20px 100px;
+   
+}
+
+.actiontext {
+    padding-bottom: 20px;
+}
+
+
+.button {
+    display:flex;
+    align-items: center;
+}
+
+.sign-up {
+    color: #f9faf8;
+    background-color: #3882F6;
+    border: 2px solid #f9faf8;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color:#f9faf8;
+    text-align:center;
+    padding:30px;
 }
